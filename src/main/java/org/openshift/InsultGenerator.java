@@ -3,8 +3,11 @@ package org.openshift;
 import java.util.Random;
 
 public class InsultGenerator {
+	private static final String BAWDY1 = "Bawdy1";
+
 	public String generateInsult() {
-		String words[][] = {{"Artless", "Bawdy", "Beslubbering"}, {"Base-court", "Bat-fowling", "Beef-witted"}, {"Apple-john", "Baggage", "Barnacle"}};
+		String words[][] = { { "Artless1", BAWDY1, "Beslubbering2" }, { "Base-court4", "Bat-fowling4", "Beef-witted4" },
+				{ "Apple-john3", "Baggage3", "Barnacle3" } };
 		String vowels = "AEIOU";
 		String article = "an";
 		String firstAdjective = words[0][new Random().nextInt(words[0].length)];
